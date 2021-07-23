@@ -2,9 +2,11 @@ let grid;
 let s;
 let scl = 40;
 let food;
+let containerX = 600;
+let containerY = 600;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(containerX, containerY);
   s = new Snake();
   frameRate(10);
   food = createVector(random(width), random(height));
@@ -28,7 +30,7 @@ function draw() {
     pickLocation();
   }
 
-  createGrid(600, 600, "#333");
+  createGrid(containerX, containerY, "#333");
   s.death();
   s.update();
   s.show();

@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.game {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.controls {
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid;
+  padding: 1rem;
+}
+
+.short {
+  width: 50%;
+  margin: 0.5rem;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+strong {
+  color: red;
+}
