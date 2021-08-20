@@ -4,12 +4,14 @@ let scl = 40;
 let food;
 let containerX = 600;
 let containerY = 600;
+let whereIsFood = [];
 
 function setup() {
   createCanvas(containerX, containerY);
   s = new Snake();
   frameRate(10);
   food = createVector(random(width), random(height));
+  console.log(food);
   pickLocation();
   noLoop(); //pause
   loop(); //play
@@ -20,6 +22,8 @@ function pickLocation() {
   let rows = floor(height / scl);
 
   food = createVector(floor(random(cols)), floor(random(rows)));
+  whereIsFood = [food.y + 1, food.x + 1]; // sempre atualiza
+  console.log(whereIsFood);
   food.mult(scl);
 }
 
@@ -35,7 +39,7 @@ function draw() {
   s.update();
   s.show();
 
-  fill(255, 0, 100);
+  fill("#e1b12c");
   rect(food.x, food.y, scl, scl);
 }
 
