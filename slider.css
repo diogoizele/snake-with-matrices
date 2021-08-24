@@ -47,7 +47,6 @@
 	-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 	left: 0;
-	bottom: -16rem;
 }
 .CSSgal .prevNext a+a {
 	left: auto;
