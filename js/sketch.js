@@ -18,13 +18,17 @@ function setup() {
 }
 
 function pickLocation() {
+  const spanFood = document.getElementById("currentFood");
   let cols = floor(width / scl);
   let rows = floor(height / scl);
 
   food = createVector(floor(random(cols)), floor(random(rows)));
+
   whereIsFood = [food.y + 1, food.x + 1]; // sempre atualiza
-  console.log(whereIsFood);
+  spanFood.innerHTML = `Coluna: ${whereIsFood[0]} e Linha: ${whereIsFood[1]} - A = a(${whereIsFood[0]}, ${whereIsFood[1]})`;
+
   food.mult(scl);
+  console.log(s.tail);
 }
 
 function draw() {

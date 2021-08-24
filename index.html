@@ -24,52 +24,89 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="./slider.css" />
   </head>
   <body>
     <section class="game">
-      <main></main>  
+      <main></main>
     </section>
-    <div>
-      Food:
-      <div>Linha: <span>1</span></div>
-      <div>Coluna: <span>2</span></div>
-    </div>
     <section class="presentation">
+      <div class="food">
+        Posição atual da fruta: <span id="currentFood"></span>
+      </div>
       <div class="CSSgal">
         <!-- Don't wrap targets in parent -->
-        <div id="s1"></div> 
+        <div id="s1"></div>
         <div id="s2"></div>
         <div id="s3"></div>
         <div id="s4"></div>
         <div id="s5"></div>
         <div id="s6"></div>
         <div id="s7"></div>
-      
+
         <div class="slider">
-            <section id="capa">
-              <h3>Matrizes</h3>
+          <section id="capa">
+            <div class="introducao">
+              <h2>Matrizes</h2>
               <h4>Trabalho de Matemática do 3º Ano da Informática</h4>
-              <h4> Desenvolvido por: <span>Diogo Izele</span> e <span>Misael Nascimento</span></h4>
-            </section>
-            <section><h3>Introdução</h3></section>
-            <section><h3>O que é</h3></section>
-            <section><h3>Tipos</h3></section>
-            <section><h3>Operações</h3></section>
-            <section><h3>Aplicação 1 - Cobrinha</h3></section>
-            <section><h3>Aplicação 2 - Calculadora Matriz</h3></section>
+              <h4>
+                Desenvolvido por: <span>Diogo Izele</span> e
+                <span>Misael Nascimento</span>
+              </h4>
+            </div>
+          </section>
+          <section>
+            <h3>Introdução</h3>
+            <p>
+              O seguinte trabalho tem como objetivo mostrar que conteúdos
+              estudados na matemática estão de algum modo presentes em nosso
+              dia-a-dia. Então, ao conhecermos esses conteúdos, também criamos
+              uma melhor compreensão das coisas que estão em nossa volta.
+            </p>
+            <p>
+              Foi com esse objetivo que os alunos Diogo Izele e Misael
+              Nascimento decidiram abstrair uma aplicação matemática de matrizes
+              recriando o famoso jogo da cobrinha e mostrando os principais
+              conceitos envolvidos nessa parte da matéria.
+            </p>
+          </section>
+          <section><h3>O que é</h3></section>
+          <section><h3>Tipos</h3></section>
+          <section><h3>Operações</h3></section>
+          <section><h3>Aplicação 1 - Cobrinha</h3></section>
+          <section><h3>Aplicação 2 - Calculadora Matriz</h3></section>
         </div>
-        
+
         <div class="prevNext">
-          <div><a href="#s7"><img src="./img/left.png" alt="Voltar"></a><a href="#s2"><img src="./img/right.png" alt="Continuar"></a></div>
-          <div><a href="#s1"><img src="./img/left.png" alt="Voltar"></a><a href="#s3"><img src="./img/right.png" alt="Continuar"></a></div>
-          <div><a href="#s2"><img src="./img/left.png" alt="Voltar"></a><a href="#s4"><img src="./img/right.png" alt="Continuar"></a></div>
-          <div><a href="#s3"><img src="./img/left.png" alt="Voltar"></a><a href="#s5"><img src="./img/right.png" alt="Continuar"></a></div>
-          <div><a href="#s4"><img src="./img/left.png" alt="Voltar"></a><a href="#s6"><img src="./img/right.png" alt="Continuar"></a></div>
-          <div><a href="#s5"><img src="./img/left.png" alt="Voltar"></a><a href="#s7"><img src="./img/right.png" alt="Continuar"></a></div>
-          <div><a href="#s6"><img src="./img/left.png" alt="Voltar"></a><a href="#s1"><img src="./img/right.png" alt="Continuar"></a></div>
+          <div>
+            <a href="#s7"><img src="./img/left.png" alt="Voltar" /></a
+            ><a href="#s2"><img src="./img/right.png" alt="Continuar" /></a>
+          </div>
+          <div>
+            <a href="#s1"><img src="./img/left.png" alt="Voltar" /></a
+            ><a href="#s3"><img src="./img/right.png" alt="Continuar" /></a>
+          </div>
+          <div>
+            <a href="#s2"><img src="./img/left.png" alt="Voltar" /></a
+            ><a href="#s4"><img src="./img/right.png" alt="Continuar" /></a>
+          </div>
+          <div>
+            <a href="#s3"><img src="./img/left.png" alt="Voltar" /></a
+            ><a href="#s5"><img src="./img/right.png" alt="Continuar" /></a>
+          </div>
+          <div>
+            <a href="#s4"><img src="./img/left.png" alt="Voltar" /></a
+            ><a href="#s6"><img src="./img/right.png" alt="Continuar" /></a>
+          </div>
+          <div>
+            <a href="#s5"><img src="./img/left.png" alt="Voltar" /></a
+            ><a href="#s7"><img src="./img/right.png" alt="Continuar" /></a>
+          </div>
+          <div>
+            <a href="#s6"><img src="./img/left.png" alt="Voltar" /></a
+            ><a href="#s1"><img src="./img/right.png" alt="Continuar" /></a>
+          </div>
         </div>
-      
       </div>
     </section>
   </body>
