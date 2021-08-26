@@ -1,3 +1,10 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -17,7 +24,6 @@ body {
   justify-content: space-around;
 }
 
-
 .presentation {
   background-color: #bdb1fa;
   width: 50%;
@@ -26,7 +32,6 @@ body {
   margin: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 15px 1px #333;
-  
 }
 
 .short {
@@ -45,7 +50,7 @@ label {
 }
 
 strong {
-  color: red;
+  color: #211170;
 }
 
 .food {
@@ -71,4 +76,93 @@ p {
   word-spacing: 2px;
   font-size: 1.1rem;
   width: 80%;
+}
+
+.list {
+  margin: 0 auto;
+  text-align: start;
+  font-size: 1.2em;
+  width: 85%;
+}
+
+.foto {
+  padding: 1rem;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.app-calc {
+  box-shadow: 0 0 1rem 1px #666666;
+  border-radius: 1rem;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.calc {
+  display: flex;
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 42%;
+}
+
+.group input {
+  width: 4rem;
+  margin: 1px;
+  text-align: center;
+  font-weight: bold;
+  color: #222;
+  border: 2px solid;
+  border-radius: 1rem;
+}
+
+.matriz-info {
+  width: 100%;
+  display: flex;
+}
+
+.matriz-info p {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  color: #211170;
+  border: 2px solid;
+  border-radius: 1rem;
+  margin: 1px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.buttons button:hover {
+  color: white;
+  border: 2px solid #211170;
+  background-color: #211170;
+}
+
+.calc-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-weight: bold;
+  text-align: center;
 }

@@ -70,11 +70,106 @@
               conceitos envolvidos nessa parte da matéria.
             </p>
           </section>
-          <section><h3>O que é</h3></section>
-          <section><h3>Tipos</h3></section>
+          <section>
+            <h3>O que é?</h3>
+            <div class="list">
+              <ul>
+                <li>Tabela</li>
+                <li>
+                  <em><strong>M</strong></em> linhas
+                </li>
+                <li>
+                  <em><strong>N</strong></em> colunas
+                </li>
+                <li>Elementos internos</li>
+              </ul>
+            </div>
+            <div class="imagens">
+              <img
+                class="foto"
+                src="./img/matriz-exemplo1-ordem.jpeg"
+                alt="Representação das Matrizes"
+              />
+              <img
+                class="foto"
+                width="200"
+                src="./img/8dc78a74-39fc-4029-ac97-d2fe8aac2df1.png"
+                alt="Elementos das Matrizes"
+              />
+            </div>
+          </section>
+          <section>
+            <h3>Tipos</h3>
+            <div class="list">
+              <ol>
+                <li>Matriz <strong>Linha</strong></li>
+                <li>Matriz <strong>Coluna</strong></li>
+                <li>Matriz <strong>Nula</strong></li>
+                <li>Matriz <strong>Quadrada</strong></li>
+                <li>
+                  Matriz <strong>Transposta</strong>
+                  <sub
+                    ><strong
+                      >*Elementos iguais entre as duas são invertidos*</strong
+                    ></sub
+                  >
+                </li>
+                <li>Matriz <strong>Oposta</strong></li>
+                <li>Matriz <strong>Identidade</strong></li>
+                <li>
+                  Matriz
+                  <strong
+                    >Inversa <sub>*A . B = B . A = I <sub>n</sub></sub
+                    >*</strong
+                  >
+                </li>
+              </ol>
+            </div>
+          </section>
           <section><h3>Operações</h3></section>
           <section><h3>Aplicação 1 - Cobrinha</h3></section>
-          <section><h3>Aplicação 2 - Calculadora Matriz</h3></section>
+          <section>
+            <h3>Aplicação 2 - Calculadora Matrizes <sub>(2x2)</sub></h3>
+            <div class="app-calc">
+              <div class="calc">
+                <div class="matriz-info">
+                  <p class="text">Matriz A</p>
+                  <p class="text">Matriz B</p>
+                </div>
+              </div>
+              <div class="calc">
+                <div class="group">
+                  <input type="number" id="a1" placeholder="a11" />
+                  <input type="number" id="a2" placeholder="a12" />
+                  <input type="number" id="a3" placeholder="a21" />
+                  <input type="number" id="a4" placeholder="a22" />
+                </div>
+                <div class="buttons">
+                  <button onclick="soma()">A + B</button>
+                  <button onclick="sub()">A - B</button>
+                  <button onclick="mult()">A x B</button>
+                </div>
+                <div class="group">
+                  <input type="number" id="b1" placeholder="b11" />
+                  <input type="number" id="b2" placeholder="b12" />
+                  <input type="number" id="b3" placeholder="b21" />
+                  <input type="number" id="b4" placeholder="b22" />
+                </div>
+              </div>
+              <div class="calc-result">
+                <p class="text">Resultado:</p>
+                <div class="group">
+                  <input type="number" id="r1" />
+                  <input type="number" id="r2" />
+                  <input type="number" id="r3" />
+                  <input type="number" id="r4" />
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              <a href="https://matrixcalc.org/pt/">Inspirado em...</a>
+            </p>
+          </section>
         </div>
 
         <div class="prevNext">
@@ -111,4 +206,5 @@
     </section>
   </body>
   <script src="./js/form.js"></script>
+  <script src="./js/calc.js"></script>
 </html>
