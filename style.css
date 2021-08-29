@@ -166,3 +166,27 @@ h3 {
   font-weight: bold;
   text-align: center;
 }
+
+.content {
+  background: #E8E8E8;
+  margin: 0 auto;
+}
+
+#operacoes {
+  overflow-y: auto;
+  width: 98%;
+}
+
+#operacoes::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+#operacoes::-webkit-scrollbar-track {
+  background: #D3D3D3;        /* color of the tracking area */
+}
+
+#operacoes::-webkit-scrollbar-thumb {
+  background-color:#383638;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid #D3D3D3;  /* creates padding around scroll thumb */
+}
